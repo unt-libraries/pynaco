@@ -287,7 +287,6 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
 
 if __name__ == '__main__':
 
-
     if len(sys.argv) < 2 or len(sys.argv) > 4:
         print("usage: %s <test string>" % sys.argv[0])
         exit(-1)
