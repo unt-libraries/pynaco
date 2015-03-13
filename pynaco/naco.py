@@ -287,31 +287,11 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
 
 if __name__ == '__main__':
 
-    def nextScriptAnswer(script, check):
-        for s in script:
-            c = check.readline()
-            yield(s.strip(), c.strip())
-
-    if len(sys.argv) < 3 or len(sys.argv) > 5:
-        print >>sys.stderr, \
-            "usage: %s scriptFile checkFile [no]Commas errFile" % sys.argv[0]
+    if len(sys.argv) < 2 or len(sys.argv) > 4:
+        print("usage: %s <test string>" % sys.argv[0])
+        exit(-1)
     else:
-        script = file(sys.argv[1], 'rb', 10000)
-        check = file(sys.argv[2], 'rb', 10000)
-        if len(sys.argv) > 4:
-            errFile = file(sys.argv[4], 'wb', 10000)
-        else:
-            errFile = sys.stderr
-        commaFlag = 1
-        if len(sys.argv) > 3:
-            if sys.argv[3].lower() == 'noCommas':
-                commaFlag = 0
+        s = sys.argv[1].strip()
+        norm = normalize(s, False)
 
-        for (s, c) in nextScriptAnswer(script, check):
-            norm = normalize(s, commaFlag)
-            if c != norm:
-                errFile.write(
-                    'Script Error\ninput: %s\nexpected: %s\ngot: %s\n' %
-                    s, c, norm)
-
-        errFile.close()
+        print("INPUT:%s\tOUTPUT:%s" % (s, norm))
