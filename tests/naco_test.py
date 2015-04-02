@@ -4,7 +4,6 @@ from pynaco import naco
 
 class NACOTest(unittest.TestCase):
 
-
     def test_capitalization_first_letter(self):
         self.assertEqual('title', naco.normalize("Title", True))
 
@@ -35,12 +34,12 @@ class NACOTest(unittest.TestCase):
                          naco.normalize("Texas -- History.", True))
 
     def test_leading_and_commas(self):
-        self.assertEqual('a a', 
+        self.assertEqual('a a',
                          naco.normalize("'\x1fa,,A,A'", 0))
+
     def test_leading_and_commas(self):
-        self.assertEqual(', a a', 
+        self.assertEqual(', a a',
                          naco.normalize("'\x1fa,,A,A'", 1))
-        
 
 
 def suite():
