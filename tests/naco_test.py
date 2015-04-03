@@ -14,7 +14,7 @@ def standard_data():
     check = open(os.path.join(DATA_PATH, 'NACOstandard.check'))
 
     # Create a list of tuples in the form of
-    # (unormalized data, expected output)
+    # (data to be normalized, expected output)
     standard = zip(script.readlines(), check.read().splitlines())
 
     script.close()
@@ -29,7 +29,7 @@ def simplified_data():
     check = open(os.path.join(DATA_PATH, 'NACOsimplified.check'))
 
     # Create a list of tuples in the form of
-    # (unormalized data, expected output)
+    # (data to be normalized, expected output)
     simplified = zip(script.readlines(), check.read().splitlines())
 
     script.close()
@@ -81,11 +81,17 @@ class NACOTest(unittest.TestCase):
     @unpack
     @data(*standard_data())
     def test_normalize(self, value, expected):
+        """Test the normalize function with the using the
+        standard_data parameters.
+        """
         self.assertEqual(expected, naco.normalize(value, True))
 
     @unpack
     @data(*simplified_data())
     def test_normalizeSimplified(self, value, expected):
+        """Test the normalizeSimplified function with the using the
+        simplified_data parameters.
+        """
         self.assertEqual(expected, naco.normalizeSimplified(value))
 
 
