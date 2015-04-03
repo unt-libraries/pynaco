@@ -42,7 +42,6 @@ def simplified_data():
 class NACOTest(unittest.TestCase):
 
     def test_capitalization_first_letter(self):
-        print DATA_PATH
         self.assertEqual('title', naco.normalize("Title", True))
 
     def test_capitalization_last_letter(self):
