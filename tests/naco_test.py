@@ -33,11 +33,11 @@ class NACOTest(unittest.TestCase):
         self.assertEqual('texas history',
                          naco.normalize("Texas -- History.", True))
 
-    def test_leading_and_commas(self):
+    def test_leading_and_commas_remove(self):
         self.assertEqual('a a',
                          naco.normalize("'\x1fa,,A,A'", 0))
 
-    def test_leading_and_commas(self):
+    def test_leading_and_commas_retain(self):
         self.assertEqual(', a a',
                          naco.normalize("'\x1fa,,A,A'", 1))
 
