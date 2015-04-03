@@ -4,5 +4,6 @@
 *.swo
 
 pynaco.egg-info
-dist
+dist/
+build/
 
