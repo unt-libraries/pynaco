@@ -24,7 +24,7 @@ setup(
     url='https://github.com/unt-libraries/pynaco',
     packages=find_packages(),
     include_package_data=True,
-    license='',
+    license='OCLC Research Public License 2.0',
     tests_require=tests_require,
     test_suite='runtests',
     classifiers=(
