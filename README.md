@@ -1,4 +1,4 @@
-# pynaco
+# pynaco [![Build Status](https://travis-ci.org/unt-libraries/pynaco.svg?branch=master)](https://travis-ci.org/unt-libraries/pynaco)
 Python Implementation of NACO Normalization Rules
 
 # Background

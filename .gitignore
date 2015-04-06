@@ -2,6 +2,7 @@
 *.egg
 *.swp
 *.swo
+.tox/
 
 pynaco.egg-info
 dist/
