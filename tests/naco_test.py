@@ -41,6 +41,9 @@ def simplified_data():
 @ddt
 class NACOTest(unittest.TestCase):
 
+    def test_sending_bytes_not_string(self):
+        self.assertEqual('texas', naco.normalize(b'Texas', True))
+
     def test_capitalization_first_letter(self):
         self.assertEqual('title', naco.normalize("Title", True))
 
