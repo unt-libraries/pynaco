@@ -8,5 +8,6 @@ def suite():
     test_suite.addTest(naco_test.suite())
     return test_suite
 
+
 runner = unittest.TextTestRunner()
 runner.run(suite())
