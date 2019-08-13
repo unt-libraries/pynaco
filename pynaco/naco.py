@@ -258,7 +258,7 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
 
     # put it back to unicode so that we can match chars
     # input = unicode(input.decode('utf-8'))
-    if type(input) != str:
+    if not isinstance(input, str):
         input = str(input, 'utf-8')
 
     # ADD SUBFIELD CODE TO CONVERT TABLE -- map it to \\
