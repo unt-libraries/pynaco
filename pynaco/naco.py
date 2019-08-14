@@ -175,7 +175,6 @@ if len(convertArray) == 0:
 
     empties = [''] * 65000
     for x in range(65535):
-        convertArray[x] = convertArray[x]
         if len(convertArray[x]):
             dConvert[chr(x)] = convertArray[x]
 
@@ -257,7 +256,7 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
         return input
 
     # put it back to unicode so that we can match chars
-    # input = unicode(input.decode('utf-8'))
+    # input = str(input, 'utf-8')
     if not isinstance(input, str):
         input = str(input, 'utf-8')
 
