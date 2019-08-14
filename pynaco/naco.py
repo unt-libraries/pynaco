@@ -1,5 +1,3 @@
-from __future__ import generators
-from types import UnicodeType
 import sys
 
 convertArray = []
@@ -10,75 +8,75 @@ if len(convertArray) == 0:
     for x in range(65535):
         append('')
 
-    convertArray[ord(u'\u2070')] = '0'
-    convertArray[ord(u'\u2080')] = '0'
-    convertArray[ord(u'\u00b9')] = '1'
-    convertArray[ord(u'\u2071')] = '1'
-    convertArray[ord(u'\u2081')] = '1'
-    convertArray[ord(u'\u00b2')] = '2'
-    convertArray[ord(u'\u2072')] = '2'
-    convertArray[ord(u'\u2082')] = '2'
-    convertArray[ord(u'\u00b3')] = '3'
-    convertArray[ord(u'\u2073')] = '3'
-    convertArray[ord(u'\u2083')] = '3'
-    convertArray[ord(u'\u2074')] = '4'
-    convertArray[ord(u'\u2084')] = '4'
-    convertArray[ord(u'\u2075')] = '5'
-    convertArray[ord(u'\u2085')] = '5'
-    convertArray[ord(u'\u2076')] = '6'
-    convertArray[ord(u'\u2086')] = '6'
-    convertArray[ord(u'\u2077')] = '7'
-    convertArray[ord(u'\u2087')] = '7'
-    convertArray[ord(u'\u2078')] = '8'
-    convertArray[ord(u'\u2088')] = '8'
-    convertArray[ord(u'\u2079')] = '9'
-    convertArray[ord(u'\u2089')] = '9'
-    convertArray[ord(u'\u03b1')] = 'a'      # alpha
-    convertArray[ord(u'\u0391')] = 'A'
-    convertArray[ord(u'\u03b2')] = 'b'      # beta
-    convertArray[ord(u'\u0392')] = 'B'
-    convertArray[ord(u'\u03b3')] = 'g'      # gamma
-    convertArray[ord(u'\u0393')] = 'G'
-    convertArray[ord(u'\u00c6')] = 'ae'     # ae digraph
-    convertArray[ord(u'\u00e6')] = 'ae'
-    convertArray[ord(u'\u0152')] = 'oe'     # oe digraph
-    convertArray[ord(u'\u0153')] = 'oe'
-    convertArray[ord(u'\u0110')] = 'd'      # crossed d, eth
-    convertArray[ord(u'\u0111')] = 'd'
-    convertArray[ord(u'\u00f0')] = 'd'
-    convertArray[ord(u'\u0131')] = 'i'      # turkish (small dotless) i
-    convertArray[ord(u'\u2113')] = 'l'      # script l, polish l
-    convertArray[ord(u'\u0141')] = 'l'
-    convertArray[ord(u'\u0142')] = 'l'
-    convertArray[ord(u'\u01a0')] = 'o'      # hooked o, slashed o
-    convertArray[ord(u'\u01a1')] = 'o'
-    convertArray[ord(u'\u00d8')] = 'o'
-    convertArray[ord(u'\u00f8')] = 'o'
-    convertArray[ord(u'\u00de')] = 'th'     # icelandic thorn
-    convertArray[ord(u'\u00fe')] = 'th'
-    convertArray[ord(u'\u01af')] = 'u'      # hooked u
-    convertArray[ord(u'\u01b0')] = 'u'
-    convertArray[ord(u'\u266f')] = '#'      # musical sharp
-    convertArray[ord(u'\u266d')] = 'F'      # musical flat
+    convertArray[ord('\u2070')] = '0'
+    convertArray[ord('\u2080')] = '0'
+    convertArray[ord('\u00b9')] = '1'
+    convertArray[ord('\u2071')] = '1'
+    convertArray[ord('\u2081')] = '1'
+    convertArray[ord('\u00b2')] = '2'
+    convertArray[ord('\u2072')] = '2'
+    convertArray[ord('\u2082')] = '2'
+    convertArray[ord('\u00b3')] = '3'
+    convertArray[ord('\u2073')] = '3'
+    convertArray[ord('\u2083')] = '3'
+    convertArray[ord('\u2074')] = '4'
+    convertArray[ord('\u2084')] = '4'
+    convertArray[ord('\u2075')] = '5'
+    convertArray[ord('\u2085')] = '5'
+    convertArray[ord('\u2076')] = '6'
+    convertArray[ord('\u2086')] = '6'
+    convertArray[ord('\u2077')] = '7'
+    convertArray[ord('\u2087')] = '7'
+    convertArray[ord('\u2078')] = '8'
+    convertArray[ord('\u2088')] = '8'
+    convertArray[ord('\u2079')] = '9'
+    convertArray[ord('\u2089')] = '9'
+    convertArray[ord('\u03b1')] = 'a'      # alpha
+    convertArray[ord('\u0391')] = 'A'
+    convertArray[ord('\u03b2')] = 'b'      # beta
+    convertArray[ord('\u0392')] = 'B'
+    convertArray[ord('\u03b3')] = 'g'      # gamma
+    convertArray[ord('\u0393')] = 'G'
+    convertArray[ord('\u00c6')] = 'ae'     # ae digraph
+    convertArray[ord('\u00e6')] = 'ae'
+    convertArray[ord('\u0152')] = 'oe'     # oe digraph
+    convertArray[ord('\u0153')] = 'oe'
+    convertArray[ord('\u0110')] = 'd'      # crossed d, eth
+    convertArray[ord('\u0111')] = 'd'
+    convertArray[ord('\u00f0')] = 'd'
+    convertArray[ord('\u0131')] = 'i'      # turkish (small dotless) i
+    convertArray[ord('\u2113')] = 'l'      # script l, polish l
+    convertArray[ord('\u0141')] = 'l'
+    convertArray[ord('\u0142')] = 'l'
+    convertArray[ord('\u01a0')] = 'o'      # hooked o, slashed o
+    convertArray[ord('\u01a1')] = 'o'
+    convertArray[ord('\u00d8')] = 'o'
+    convertArray[ord('\u00f8')] = 'o'
+    convertArray[ord('\u00de')] = 'th'     # icelandic thorn
+    convertArray[ord('\u00fe')] = 'th'
+    convertArray[ord('\u01af')] = 'u'      # hooked u
+    convertArray[ord('\u01b0')] = 'u'
+    convertArray[ord('\u266f')] = '#'      # musical sharp
+    convertArray[ord('\u266d')] = 'F'      # musical flat
     # chars to delete
     convertArray[ord('\'')] = ''
     convertArray[ord('|')] = ''
     convertArray[ord('[')] = ''
     convertArray[ord(']')] = ''
     # chars to convert to blanks
-    convertArray[ord(u'\u00ae')] = ' '  # patent sign
-    convertArray[ord(u'\u2117')] = ' '  # phonorecord symbol
-    convertArray[ord(u'\u00a9')] = ' '  # copyright symbol
-    convertArray[ord(u'\u00b1')] = ' '  # plus and minus
-    convertArray[ord(u'\u00a3')] = ' '  # british pound
-    convertArray[ord(u'\u207a')] = ' '  # superscript/subscript + - ( )
-    convertArray[ord(u'\u208a')] = ' '
-    convertArray[ord(u'\u207b')] = ' '
-    convertArray[ord(u'\u208b')] = ' '
-    convertArray[ord(u'\u207d')] = ' '
-    convertArray[ord(u'\u207e')] = ' '
-    convertArray[ord(u'\u208d')] = ' '
-    convertArray[ord(u'\u208e')] = ' '
+    convertArray[ord('\u00ae')] = ' '  # patent sign
+    convertArray[ord('\u2117')] = ' '  # phonorecord symbol
+    convertArray[ord('\u00a9')] = ' '  # copyright symbol
+    convertArray[ord('\u00b1')] = ' '  # plus and minus
+    convertArray[ord('\u00a3')] = ' '  # british pound
+    convertArray[ord('\u207a')] = ' '  # superscript/subscript + - ( )
+    convertArray[ord('\u208a')] = ' '
+    convertArray[ord('\u207b')] = ' '
+    convertArray[ord('\u208b')] = ' '
+    convertArray[ord('\u207d')] = ' '
+    convertArray[ord('\u207e')] = ' '
+    convertArray[ord('\u208d')] = ' '
+    convertArray[ord('\u208e')] = ' '
     convertArray[ord(' ')] = ' '
     convertArray[ord(',')] = ','
     convertArray[ord('!')] = ' '
@@ -105,9 +103,9 @@ if len(convertArray) == 0:
     convertArray[ord('?')] = ' '
     convertArray[ord('*')] = ' '
     convertArray[ord('@')] = ' '
-    convertArray[ord(u'\u00b0')] = ' '    # degree sign
-    convertArray[ord(u'\u00bf')] = ' '    # inverted question mark
-    convertArray[ord(u'\u00a1')] = ' '    # inverted exclamation mark
+    convertArray[ord('\u00b0')] = ' '    # degree sign
+    convertArray[ord('\u00bf')] = ' '    # inverted question mark
+    convertArray[ord('\u00a1')] = ' '    # inverted exclamation mark
     convertArray[ord('#')] = '#'
     convertArray[ord('&')] = '&'
     convertArray[ord('+')] = '+'
@@ -177,9 +175,8 @@ if len(convertArray) == 0:
 
     empties = [''] * 65000
     for x in range(65535):
-        convertArray[x] = convertArray[x].encode('ascii')
         if len(convertArray[x]):
-            dConvert[unichr(x)] = convertArray[x]
+            dConvert[chr(x)] = convertArray[x]
 
 
 def withBlanks(strBuf):
@@ -259,9 +256,8 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
         return input
 
     # put it back to unicode so that we can match chars
-    # input = unicode(input.decode('utf-8'))
-    if type(input) != UnicodeType:
-        input = unicode(input, 'utf-8')
+    if not isinstance(input, str):
+        input = str(input, 'utf-8')
 
     # ADD SUBFIELD CODE TO CONVERT TABLE -- map it to \\
     # ALSO ADDED COMMA BACK TO TABLE TO STAY AS IS
@@ -285,6 +281,7 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
 
     return cleanUp(strBuf)
 
+
 if __name__ == '__main__':
 
     if len(sys.argv) < 2 or len(sys.argv) > 4:
@@ -292,6 +289,7 @@ if __name__ == '__main__':
         exit(-1)
     else:
         s = sys.argv[1].strip()
+
         norm = normalize(s, False)
 
         print("INPUT:%s\tOUTPUT:%s" % (s, norm))
