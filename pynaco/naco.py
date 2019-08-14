@@ -256,7 +256,6 @@ def normalize(input, leaveFirstComma, cleanUp=strict):
         return input
 
     # put it back to unicode so that we can match chars
-    # input = str(input, 'utf-8')
     if not isinstance(input, str):
         input = str(input, 'utf-8')
 
