@@ -19,6 +19,8 @@ tests_require = [
 setup(
     name='pynaco',
     version=version,
+    maintainer='Mark Phillips',
+    maintainer_email='mark.phillips@unt.edu',
     description='Python implementation of the NACO normalization rules.',
     long_description=readme,
     url='https://github.com/unt-libraries/pynaco',
@@ -31,6 +33,6 @@ setup(
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.7',
     )
 )
