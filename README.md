@@ -1,4 +1,4 @@
-# pynaco [![Build Status](https://travis-ci.org/unt-libraries/pynaco.svg?branch=master)](https://travis-ci.org/unt-libraries/pynaco) [![PyPI Version](https://img.shields.io/pypi/v/pynaco.svg)](https://pypi.python.org/pypi/pynaco)
+# pynaco [![Build Status](https://github.com/unt-libraries/pynaco/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/unt-libraries/pynaco/actions) [![PyPI Version](https://img.shields.io/pypi/v/pynaco.svg)](https://pypi.python.org/pypi/pynaco)
 Python Implementation of NACO Normalization Rules
 
 # Installation
