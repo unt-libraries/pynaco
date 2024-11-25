@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- name: "University of North Texas Libraries"
+  website: "https://library.unt.edu/"
+title: "pynaco"
+version: 1.0.0
+date-released: 2021-07-16
+url: "https://github.com/unt-libraries/pynaco"
