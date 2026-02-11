@@ -4,6 +4,6 @@ authors:
 - name: "University of North Texas Libraries"
   website: "https://library.unt.edu/"
 title: "pynaco"
-version: 1.0.0
-date-released: 2021-07-16
+version: 1.0.1
+date-released: 2026-02-11
 url: "https://github.com/unt-libraries/pynaco"
